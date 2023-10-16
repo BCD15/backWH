@@ -1,0 +1,19 @@
+[tool.pdm]
+
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "BCD15", email = "bruno69correadias@gmail.com"},
+]
+dependencies = [
+    "django>=4.2.6",
+    "djangorestframework>=3.14.0",
+    "django-cors-headers>=4.3.0",
+    "python-magic>=0.4.27",
+    "Pillow>=10.1.0",
+    "drf-spectacular>=0.26.5",
+]
+requires-python = ">=3.10"
+license = {text = "n"}
