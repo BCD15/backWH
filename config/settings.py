@@ -15,7 +15,7 @@ if MODE in ["PRODUCTION", "MIGRATE"]:
     MEDIA_URL = '/media/' 
 else:    
     MY_IP = os.getenv("MY_IP", "127.0.0.1")
-    MEDIA_URL = f"http://{MY_IP}:19003/media/"
+    MEDIA_URL = f"http://191.52.55.41:19003/media/"
 """
 Django settings for config project.
 
