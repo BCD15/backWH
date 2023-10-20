@@ -9,8 +9,7 @@ class PeopleSerializer(ModelSerializer):
     class Meta:
         model = People
         fields = "__all__"
-        depth = 1
-        foto_attachment_key = SlugRelatedField(
+    foto_attachment_key = SlugRelatedField(
         source="foto",
         queryset=Image.objects.all(),
         slug_field="attachment_key",
@@ -18,6 +17,7 @@ class PeopleSerializer(ModelSerializer):
         write_only=True,
     )
     foto = ImageSerializer(required=False, read_only=True)
+        
         
 class PeopleDetailSerializer(ModelSerializer):
     class Meta:
@@ -29,4 +29,4 @@ class PeopleDetailSerializer(ModelSerializer):
 class PeopleListSerializer(ModelSerializer):
     class Meta:
         model = People
-        fields = ["id", "nome", "valor"] 
+        fields = ["id", "nome", "servico", "local", "idade", "valor", "foto"] 
