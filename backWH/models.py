@@ -3,11 +3,11 @@ from django.db import models
 from uploader.models import Image
 
 class People(models.Model):
-    name = models.CharField(max_length=100)
-    descricao = models.CharField(max_length=255)
+    nome = models.CharField(max_length=100)
+    descricao = models.CharField(max_length=999)
     servico = models.CharField(max_length=255)
     local = models.CharField(max_length=255)
-    age = models.DecimalField(max_digits=3)
+    idade = models.DecimalField(max_digits=3, decimal_places=0)
     valor = models.DecimalField(max_digits=7, decimal_places=2, default=0)
     foto = models.ForeignKey(
         Image,
@@ -17,4 +17,4 @@ class People(models.Model):
     )
 
     def __str__(self):
-        return f"{self.name} ({self.descricao}) {self.servico} ({self.valor}) {self.foto}"
+        return f"{self.nome} ({self.descricao}) {self.servico} ({self.valor}) {self.foto}"

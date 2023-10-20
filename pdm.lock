@@ -2,6 +2,21 @@
 # It is not intended for manual editing.
 
 [[package]]
+requires_python = ">=3.10"
+path = "./."
+summary = ""
+dependencies = [
+    "Pillow>=10.1.0",
+    "django-cors-headers>=4.3.0",
+    "django>=4.2.6",
+    "djangorestframework>=3.14.0",
+    "drf-spectacular>=0.26.5",
+    "netifaces>=0.11.0",
+    "python-dotenv>=1.0.0",
+    "python-magic>=0.4.27",
+]
+
+[[package]]
 name = "asgiref"
 version = "3.7.2"
 requires_python = ">=3.7"
@@ -163,7 +178,7 @@ summary = "Implementation of RFC 6570 URI Templates"
 
 [metadata]
 lock_version = "4.1"
-content_hash = "sha256:1c20bb2c02f9d29b44d3b3b05c2f435045126e757f3f00dead81d5ff43995c60"
+content_hash = "sha256:95d664108b64d4757d42d0b3a3a92e2c2dd8b62fda7a9d93c52c66147e1e744e"
 
 [metadata.files]
 "asgiref 3.7.2" = [

@@ -29,4 +29,4 @@ class PeopleDetailSerializer(ModelSerializer):
 class PeopleListSerializer(ModelSerializer):
     class Meta:
         model = People
-        fields = ["id", "name", "valor"] 
+        fields = ["id", "nome", "valor"] 
